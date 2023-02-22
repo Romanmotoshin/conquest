@@ -1,0 +1,25 @@
+.main {
+    height: 768px;
+    background-color: #FDFDFB;
+    background-image: url("../img/main/quartzbg.png");
+    background-repeat: no-repeat;
+    background-position: 62% -11px;
+    &__title {
+        font-family: 'Playfair Display';
+        font-weight: 400;
+        font-size: 45px;
+        color: #1B1A17;
+    }
+    &__subtitle {
+        margin-top: 16px;
+        font-family: 'Playfair Display';
+        font-weight: 400;
+        font-size: 30px;
+        color: #1B1A17;
+    }
+    &__text {
+        font-weight: 300;
+        line-height: 21px;
+        color: rgba(27, 26, 23, 0.82);
+    }
+}
