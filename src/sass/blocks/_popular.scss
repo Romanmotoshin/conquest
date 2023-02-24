@@ -1,0 +1,79 @@
+.popular {
+    background-color: #ffffff;
+    padding-top: 79px;
+    padding-bottom: 86px;
+    &__title {
+        text-align: center;
+    }
+    &__watch {
+        width: 105px;
+        margin-left: auto;
+        margin-right: 0;
+        &:hover {
+            cursor: pointer;
+            .popular__watch-text {
+                color: #000000;
+            }
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #444240;
+            text-decoration: none;
+        }
+        &-line {
+            margin: 11px auto 0 auto;
+            width: 101px;
+            height: 0px;
+            border-top: 1px solid #C4C0B6;
+        }
+    }
+    &__items {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 370px;
+        min-height: 467px;
+        padding: 40px 0 40px 40px;
+    }
+    &__name {
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(27, 26, 23, 0.82);
+    }
+    &__price {
+        margin-top: 10px;
+        font-family: 'Prata';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(27, 26, 23, 0.82);
+    }
+    &__img {
+        background-image: url("../img/popular/circle.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__detail {
+        margin-top: 19px;
+        display: flex;
+        align-items: center;
+        &-text {
+            margin-left: 18px;
+            font-family: 'Playfair Display';
+            font-weight: 400;
+            font-size: 16px;
+            color: #1B1A17;
+            text-decoration: none;
+            &:hover {
+                color: #000000;
+            }
+        }
+    }
+}

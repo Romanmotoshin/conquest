@@ -29,14 +29,49 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #FFFFFF;
-    &__mt64_black {
-        margin-top: 64px;
+    &:hover {
+        cursor: pointer;
+    }
+    border: none;
+    &_black {
         background-color: #444240;
+        &:hover {
+            background-color: #000000;
+        }
+    }
+    &_orange {
+        background-color: #D4B098;
+        &:hover {
+            background-color: #d6966c;
+        }
     }
 }
+
+.line {
+    width: 50px;
+    height: 0px;
+    border-top: 1px solid #8B8371;
+    &_w30 {
+        width: 30px;
+    }
+}
+
+.title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: #1B1A17;
+}
+
+
 
 
 
 @import 'blocks/header';
 @import 'blocks/main';
+@import 'blocks/popular';
+@import 'blocks/quality';
+@import 'blocks/social';
+@import 'blocks/footer';
 @import 'blocks/media';

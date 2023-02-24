@@ -1,0 +1,48 @@
+.quality {
+    padding-top: 52px;
+    position: relative;
+    background: linear-gradient(90deg ,#F7F5EF 0% 40%, #FDFDFB 30% 100%);
+    &__wrapper {
+        display: flex;
+    }
+    &__circles {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__slider {
+        margin-left: 79px;
+    }
+    &__toggle {
+        width: 63px;
+        margin-top: 20px;
+        margin-left: 75%;
+        display: flex;
+    }
+    &__number {
+        margin: 0 20px;
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(27, 26, 23, 0.82);
+    }
+    &__descr {
+        width: 400px;
+        margin-left: 70px;
+        margin-top: 80px;
+    }
+    &__text {
+        margin-top: 35px;
+        margin-bottom: 45px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #444240;
+    }
+    &__arrow {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

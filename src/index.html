@@ -25,9 +25,9 @@
                 </nav>
     
                 <div class="header__icons">
-                    <img src="icons/search.svg" class="header__icon">
-                    <img src="icons/heart.svg" class="header__icon">
-                    <img src="icons/bag.svg" class="header__icon">
+                    <img src="icons/header/search.svg" class="header__icon">
+                    <img src="icons/header/heart.svg" class="header__icon">
+                    <img src="icons/header/bag.svg" class="header__icon">
                 </div>
             </div>
         </div>
@@ -36,14 +36,156 @@
     <section class="main">
         <div class="container">
             <div class="main__descr">
+                <div class="line main__line"></div>
                 <div class="main__title">Весна/Лето 2019</div>
                 <div class="main__subtitle">Коллекция</div>
                 <div class="main__text">Швейцарские часы в наличии в Москве и с доставкой по всему миру</div>
-                <div class="button button__mt64_black">Смотреть каталог</div>
+                <button class="button button_black">Смотреть каталог</button>
+
+                <div class="main__quartz">
+                    <img src="img/main/quartzbg.png" alt="quartz" class="main__img">
+                    <div class="main__price">
+                        <div class="main__price-text">22 000</div>
+                        <img class="main__price-img" src="icons/main/ruble.svg" alt="ruble">
+                        <div class="line"></div>
+                    </div>
+                    <div class="main__diameter">
+                        <div class="line"></div>
+                        <div class="main__diameter-text">28 мм диаметр</div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
     </section>
+
+    <section class="popular">
+        <div class="container">
+            <div class="title popular__title">Популярные модели</div>
+            <div class="popular__watch">
+                <a href="#" class="popular__watch-text">Смотреть все</a>
+                <div class="popular__watch-line"></div>
+            </div>
+            <div class="popular__items">
+                <div class="popular__item">
+                    <div class="popular__name">RADO</div>
+                    <div class="popular__price">65 300 ₽</div>
+                    <div class="popular__img">
+                        <img src="img/popular/watch1.png" alt="watch">
+                    </div>
+                    <div class="popular__detail">
+                        <div class="line line_w30"></div>
+                        <a href="#" class="popular__detail-text">Подробнее</a>
+                    </div>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__name">BVLGARI</div>
+                    <div class="popular__price">81 700 ₽</div>
+                    <div class="popular__img">
+                        <img src="img/popular/watch2.png" alt="watch">
+                    </div>
+                    <div class="popular__detail">
+                        <div class="line line_w30"></div>
+                        <a href="#" class="popular__detail-text">Подробнее</a>
+                    </div>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__name">BVLGARI</div>
+                    <div class="popular__price">72 700 ₽</div>
+                    <div class="popular__img">
+                        <img src="img/popular/watch3.png" alt="watch">
+                    </div>
+                    <div class="popular__detail">
+                        <div class="line line_w30"></div>
+                        <a href="#" class="popular__detail-text">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quality">
+        <img class="quality__circles" src="img/quality/circles.png" alt="circles">
+        <div class="container">
+            <div class="quality__wrapper">
+
+                <div class="quality__slider">
+                    <img src="img/quality/slide.jpg" alt="watch" class="quality__slide">
+                    <div class="quality__toggle">
+                        <img src="icons/quality/arrow_left.png" alt="arrow" class="quality__arrow">
+                        <div class="quality__number">01</div>
+                        <img src="icons/quality/arrow_right.png" alt="arrow" class="quality__arrow">
+                    </div>
+                </div>
+    
+                <div class="quality__descr">
+                    <div class="title quality__title">Подлинное качество</div>
+                    <div class="quality__text">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</div>
+                    <button class="button button_orange">Смотреть каталог</и>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="social">
+        <div class="container">
+            <div class="social__wrapper">
+                <div class="social__descr">
+                    <div class="title social__title">Следите за нашими новостями</div>
+                    <div class="social__text">Подписывайтесь на @conquest_watch в соцсетях и узнавайте о новинках и акциях первыми.</div>
+                    <div class="social__icons">
+                        <a class="social__icon" href="#"><img src="icons/social/instagram.svg" alt="instagram"></a>
+                        <a class="social__icon" href="#"><img src="icons/social/facebook.svg" alt="facebook"></a>
+                        <a class="social__icon" href="#"><img src="icons/social/twitter.svg" alt="twitter"></a>
+                    </div>
+                </div>
+                <div class="social__images">
+                    <img src="img/social/photo1.jpg" class="social__img social__img-first">
+                    <img src="img/social/photo2.jpg" class="social__img social__img-second">
+                    <img src="img/social/photo3.jpg" class="social__img social__img-third">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__logo">
+                        <img src="icons/footer/logo.png" class="footer__logo-img">
+                        <div class="footer__logo-text">CONQUEST</div>
+                    </div>
+                    <div class="footer__tel">8 (499) 450-47-97
+                    </div>
+                    <a href="#" class="footer__link">info@conquest.watch.ru</a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">о компании</div>
+                    <a href="#" class="footer__link">Наши магазины</a>
+                    <a href="#" class="footer__link">Вакансии</a>
+                    <a href="#" class="footer__link">Сертификаты</a>
+                    <a href="#" class="footer__link">Отзывы</a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">покупателям</div>
+                    <a href="#" class="footer__link">Каталог товаров</a>
+                    <a href="#" class="footer__link">Как заказать?</a>
+                    <a href="#" class="footer__link">FAQ</a>
+                    <a href="#" class="footer__link">Корпоративным клиентам</a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">оплата и доставка</div>
+                    <a href="#" class="footer__link">Способы оплаты</a>
+                    <a href="#" class="footer__link">Время доставки</a>
+                    <a href="#" class="footer__link">Гарантии и ремонт</a>
+                    <a href="#" class="footer__link">Возврат и компенсация</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script src="js/script.js"></script>
 </body>

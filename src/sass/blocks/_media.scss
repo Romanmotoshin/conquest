@@ -2,11 +2,107 @@
     .container {
         width: 960px;
     }
+    .main {
+        &__quartz {
+            left: 90px;
+        }
+        &__descr {
+            margin-left: 65px;
+        }
+    }
+
+    .popular {
+        &__item {
+            width: 30%;
+            min-height: unset;
+            height: auto;
+        }
+        &__img {
+            background-size: contain;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .quality {
+        &__descr {
+            margin-left: 25px;
+        }
+    }
+
+    .social {
+        &__text {
+            width: 300px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
     .container {
         width: 720px;
+    }
+    .main {
+        overflow: hidden;
+        &__quartz {
+            left: 20px;
+        }
+        &__diameter {
+            left: 114px;
+            right: unset;
+            &-text {
+                order: -1;
+                margin-left: 0;
+                margin-right: 15px;
+                margin-top: 0;
+            }
+        }
+        &__title {
+            width: 280px;
+        }
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .quality {
+        &__wrapper {
+            align-items: top;
+        }
+        &__slider {
+            margin-left: 0;
+        }
+        &__slide {
+            width: 100%;
+        }
+        &__descr {
+            margin-top: 0;
+        }
+        &__text {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .social {
+        &__wrapper {
+            height: auto;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__descr {
+            padding-left: 50px;
+        }
+        &__title {
+            margin-top: 30px;
+        }
+        &__text {
+            margin-right: 0;
+            width: 60%;
+        }
+        &__icons {
+            margin-top: 30px;
+        }
     }
 }
 
@@ -26,6 +122,104 @@
 
     .nav {
         width: 275px;
+    }
+
+    .main {
+        height: auto;
+        padding-top: 5px;
+        &__quartz {
+            top: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        &__img  {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        &__text {
+            margin-top: 300px;
+            width: 250px;
+        }
+        &__price {
+            top: 200px;
+            left: 10px;
+        }
+        &__diameter {
+            left: 10px;
+            bottom: 155px;
+        }
+    }
+
+    .popular {
+        &__items {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 45%;
+        }
+    }
+
+    .quality {
+        &__circles {
+            display: none;
+        }
+        &__slider {
+            width: 80%;
+        }
+        &__toggle {
+            margin: 10px auto;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__descr {
+            margin-left: 0;
+            width: 90%;
+            div {
+                text-align: center;
+            }
+            button {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .social {
+        padding-top: 20px;
+        &__images {
+            grid-template-columns: 242px 242px;
+            grid-template-rows: 460px 228px;
+            justify-items: center;
+            align-items: stretch;
+        }
+        &__img {
+            &-second {
+                grid-column: 1 / 3;
+                grid-row: 1 / 2;
+            }
+            &-first {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+            &-third {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__title {
+            font-size: 12px;
+        }
+        &__link {
+            font-size: 10px;
+        }
     }
 }
 
@@ -47,5 +241,100 @@
     .nav {
         width: 80%;
         order: 1;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .main {
+        height: 600px;
+        &__quartz {
+            top: 300px;
+        }
+        &__descr {
+            width: 300px;
+            margin: 0 auto;
+            div {
+                text-align: center;
+                margin: 0 auto;
+            }
+            .main__text {
+                margin: 20px auto;
+            }
+        }
+        &__img {
+            height: 300px;
+            object-fit: contain;
+        }
+        &__title {
+            width: 100%;
+        }
+        &__price {
+            top: 75px;
+            left: 45px;
+        }
+        &__diameter {
+            left: 25px;
+            bottom: 55px;
+        }
+    }
+
+    .line_w30 {
+        display: block;
+    }
+
+    .popular {
+        padding-bottom: 20px;
+        &__watch {
+            margin: 20px auto;
+        }
+        &__item {
+            width: 90%;
+        }
+    }
+
+    .social {
+        padding-bottom: 30px;
+        padding-top: 20px;
+        &__images {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+        }
+        &__img {
+            width: 90%;
+
+            &-second {
+                grid-column: unset;
+                grid-row: unset;
+            }
+            &-first {
+                grid-column: unset;
+                grid-row: unset;
+            }
+            &-third {
+                grid-column: unset;
+                grid-row: unset;
+            }
+        }
+        &__descr {
+            padding-left: 10px;
+        }
+        &__text {
+            width: 95%;
+            margin-top: 20px;
+        }
+    }
+
+    .footer {
+        padding-bottom: 0;
+        &__items {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__item {
+            width: 40%;
+            margin-bottom: 20px;
+        }
     }
 }

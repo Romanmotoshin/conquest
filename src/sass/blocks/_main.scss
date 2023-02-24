@@ -1,14 +1,18 @@
 .main {
+    padding-top: 236px;
     height: 768px;
     background-color: #FDFDFB;
-    background-image: url("../img/main/quartzbg.png");
-    background-repeat: no-repeat;
-    background-position: 62% -11px;
+    &__descr {
+        position: relative;
+        z-index: 1;
+        margin-left: 90px;  
+    }
     &__title {
         font-family: 'Playfair Display';
         font-weight: 400;
         font-size: 45px;
         color: #1B1A17;
+        line-height: 60px;
     }
     &__subtitle {
         margin-top: 16px;
@@ -18,8 +22,57 @@
         color: #1B1A17;
     }
     &__text {
+        width: 258px;
+        margin-top: 39px;
+        margin-bottom: 64px;
         font-weight: 300;
         line-height: 21px;
         color: rgba(27, 26, 23, 0.82);
+    }
+    &__line {
+        position: absolute;
+        top: 36px;
+        left: -65px;
+    }
+    &__quartz {
+        position: absolute;
+        z-index: -1;
+        top: -247px;
+        left: 290px;
+    }
+    &__price {
+        position: absolute;
+        top: 149px;
+        left: 114px;
+        display: flex;
+        align-items: center;
+        &-text {
+            margin-top: 3px;
+            margin-right: 7px;
+            font-family: 'Prata';
+            font-weight: 400;
+            font-size: 16px;
+            color: #1B1A17;
+        }
+        &-img {
+            margin-right: 15px;
+        }
+    }
+    &__diameter {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        bottom: 143px;
+        right: -85px;
+        &-text {
+            margin-top: 3px;
+            margin-left: 15px;
+            font-family: 'Prata';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #1B1A17;
+        }
     }
 }
